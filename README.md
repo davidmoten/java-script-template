@@ -31,7 +31,7 @@ On my i7 desktop it takes 2 seconds to run (compile and execute). Same startup l
 
 How to compile and run java source using runjava
 ---------------------------------------------------
-Again if you want to run a script using pure java then use runjava. For example:
+Again if you want to run java source in a separate file then use [runjava](https://github.com/davidmoten/java-script-template/blob/master/runjava). For example:
 
 ```bash
 ./runjava Example.java
