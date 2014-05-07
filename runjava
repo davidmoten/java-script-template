@@ -21,13 +21,13 @@ function run {
   ## run the class 
   ## you may wish to add additional parameters to come
   ## through as args to the main method
-  java -classpath $TEMP_DIRECTORY $CLASS_NAME
+  java -classpath $TEMP_DIRECTORY $CLASS_NAME $1 $2 $3 $4 $5 $6 $7 $8
 }
 
 prepare
 cp $1 $JAVA_SOURCE.tmp
 compile
-run
+run $2 $3 $4 $5 $6 $7 $8 $9
 
 
 
