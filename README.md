@@ -10,6 +10,10 @@ The script is designed for linux with a bash shell.
 The example has this code embedded in it:
 
 ```java
+import java.io.*;
+import java.text.*;
+import java.util.*;
+
 public class Script {
 
     public static void main(String[] args) throws Exception {
