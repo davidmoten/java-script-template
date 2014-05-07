@@ -17,7 +17,7 @@ import java.util.*;
 public class Script {
 
     public static void main(String[] args) throws Exception {
-       System.out.println("Here's a test run");
+       System.out.println("Hello world!");
     }
 
 }
