@@ -30,7 +30,7 @@ cat <<EOF >$JAVA_SOURCE.tmp
 //Write your java class here with a main method
 //Be sure to leave the name of the class as Script 
 
-//import some commonly used imports
+//import some utilities
 import java.io.*;
 import java.text.*;
 import java.util.*;
