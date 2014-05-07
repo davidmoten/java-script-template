@@ -18,7 +18,9 @@ function compile {
 }
 
 function run {
-  ## run the class using all passed in parameters from the command line
+  ## run the class 
+  ## you may wish to add additional parameters to come
+  ## through as args to the main method
   java -classpath $TEMP_DIRECTORY $CLASS_NAME
 }
 
@@ -38,7 +40,7 @@ import java.util.*;
 public class Script {
 
     public static void main(String[] args) throws Exception {
-       System.out.println("Here's a test run for you");
+       System.out.println("Hello world!");
     }
 
 }
