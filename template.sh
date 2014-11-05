@@ -21,7 +21,7 @@ function run {
   ## run the class 
   ## you may wish to add additional parameters to come
   ## through as args to the main method
-  java -classpath $TEMP_DIRECTORY $CLASS_NAME
+  java -classpath $TEMP_DIRECTORY:lib $CLASS_NAME
 }
 
 prepare
