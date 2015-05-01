@@ -27,7 +27,7 @@ public class Example {
 }
 ```
 
-Run it like this:
+Run it like this (passing `dave` as an argument):
 
 ```bash
 $ ./runjava Example.java dave
@@ -38,9 +38,8 @@ On my i7 desktop it takes 0.8 seconds to run (compile and execute). Same startup
 
 How to embed java source in a bash script
 ------------------------------------------
-The script is designed for linux with a bash shell.
-
-[example.sh](https://github.com/davidmoten/java-script-template/blob/master/example.sh) has this code embedded in it:
+[example.sh](https://github.com/davidmoten/java-script-template/blob/master/example.sh) is a bash script that has Example.java embedded in it. 
+It is designed to be run with a linux/unix bash shell.
 
 The script is run by entering ./example.sh at the command line.
 
