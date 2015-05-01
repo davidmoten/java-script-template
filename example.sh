@@ -14,7 +14,7 @@ function compile {
   sed "s/public class \w\w*/public class $CLASS_NAME/" $JAVA_SOURCE.tmp >$JAVA_SOURCE
  
   ## compile the java
-  javac -classpath .:$CLASSPATH $JAVA_SOURCE 
+  javac -classpath .:lib:$CLASSPATH $JAVA_SOURCE 
 }
 
 function run {
