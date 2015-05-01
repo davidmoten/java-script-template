@@ -11,7 +11,7 @@ function prepare {
 
 function compile {
   ## change the name of the class to match the file
-  sed "s/public class Script /public class $CLASS_NAME /g" $JAVA_SOURCE.tmp >$JAVA_SOURCE
+  sed "s/public class \w\w*/public class $CLASS_NAME/" $JAVA_SOURCE.tmp >$JAVA_SOURCE
  
   ## compile the java
   javac $JAVA_SOURCE 
@@ -30,7 +30,6 @@ cat <<EOF >$JAVA_SOURCE.tmp
 ////////////////////////////////////////////////////////////
 
 //Write your java class here with a main method
-//Be sure to leave the name of the class as Script 
 
 //import some utilities
 import java.io.*;
