@@ -8,7 +8,7 @@ import java.util.*;
 public class Example {
 
     public static void main(String[] args) throws Exception {
-       System.out.println("Hello world! argsCount="+args.length);
+       System.out.println("Hello " + args[0] + "!");
     }
 
 }

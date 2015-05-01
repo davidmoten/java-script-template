@@ -11,9 +11,29 @@ How to run java source in a separate file
 ---------------------------------------------------
 If you want to run java source in a separate file then use [runjava](https://github.com/davidmoten/java-script-template/blob/master/runjava). For example:
 
-```bash
-./runjava Example.java
+Example.java:
+
+```java
+import java.io.*;
+import java.text.*;
+import java.util.*;
+
+public class Example {
+
+    public static void main(String[] args) throws Exception {
+       System.out.println("Hello " + args[0] + "!");
+    }
+
+}
 ```
+
+Run it like this:
+
+```bash
+$ ./runjava Example.java dave
+Hello dave!
+```
+
 
 On my i7 desktop it takes 2 seconds to run (compile and execute). Same startup lag as groovy (which you would expect!).
 
@@ -22,20 +42,6 @@ How to embed java source in a bash script
 The script is designed for linux with a bash shell.
 
 [example.sh](https://github.com/davidmoten/java-script-template/blob/master/example.sh) has this code embedded in it:
-
-```java
-import java.io.*;
-import java.text.*;
-import java.util.*;
-
-public class Script {
-
-    public static void main(String[] args) throws Exception {
-       System.out.println("Hello world!");
-    }
-
-}
-```
 
 The script is run by entering ./example.sh at the command line.
 
