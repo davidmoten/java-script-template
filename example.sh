@@ -14,14 +14,14 @@ function compile {
   sed "s/public class \w\w*/public class $CLASS_NAME/" $JAVA_SOURCE.tmp >$JAVA_SOURCE
  
   ## compile the java
-  javac $JAVA_SOURCE 
+  javac -classpath .:$CLASSPATH $JAVA_SOURCE 
 }
 
 function run {
   ## run the class 
   ## you may wish to add additional parameters to come
   ## through as args to the main method
-  java -classpath $TEMP_DIRECTORY:lib $CLASS_NAME
+  java -classpath $TEMP_DIRECTORY:lib:$CLASSPATH $CLASS_NAME
 }
 
 prepare
