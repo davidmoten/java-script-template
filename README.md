@@ -34,8 +34,7 @@ $ ./runjava Example.java dave
 Hello dave!
 ```
 
-
-On my i7 desktop it takes 2 seconds to run (compile and execute). Same startup lag as groovy (which you would expect!).
+On my i7 desktop it takes 0.8 seconds to run (compile and execute). Same startup lag as groovy (which you would expect!).
 
 How to embed java source in a bash script
 ------------------------------------------
